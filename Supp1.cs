@@ -8,10 +8,12 @@ namespace Lab5_CH
 {
     class Supp1
     {
+        //создаём 3 списка типа private в один из которых будем добавлять другие
         private List<int> list;
         private List<int> list2;
         private List<int> list3;
         Random rnd = new Random();
+        //метод, который добаляет в 1й список элементы из 2 и 3 при этом проверяя их уникальность
         public void Combain()
         {
             Console.WriteLine("Added:");
@@ -43,6 +45,7 @@ namespace Lab5_CH
             Console.WriteLine();
             Console.WriteLine("-------------------------------------------");
         }
+        //Конструктор, который создаёт и заполняет списки базовыми значениями
         public Supp1()
         {
             list = new List<int>();

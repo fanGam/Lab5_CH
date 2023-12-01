@@ -10,6 +10,7 @@ namespace Lab5_CH
     {
         private LinkedList<int> list;
         private Random rnd = new Random();
+        //метод, который проходит по списку и находит максимальный и минимальный элемент и удаляет всё что между ними
         public void ClearSmth()
         {
             LinkedList<int> list1 = new LinkedList<int>();
@@ -48,7 +49,7 @@ namespace Lab5_CH
             Console.WriteLine();
             Console.WriteLine("-------------------------------------------");
         }
-
+        //конструктор, который создаёт 1й список и заполняет его рандомом
         public Supp2()
         {
             list = new LinkedList<int>();

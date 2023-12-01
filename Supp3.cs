@@ -9,6 +9,7 @@ namespace Lab5_CH
     class Supp3
     {
         private HashSet<string> TVShows;
+        //метод, который проходит и выводит количество зрителей для каждого шоу (генерируется рандомно)
         public void ShowRandomData(int n)
         {
             Random rnd = new Random();
@@ -19,6 +20,7 @@ namespace Lab5_CH
             Console.WriteLine();
             Console.WriteLine("-------------------------------------------");
         }
+        //конструктор, который заполняет hashset названиями тв шоу
         public Supp3()
         {
             TVShows = new HashSet<string>();

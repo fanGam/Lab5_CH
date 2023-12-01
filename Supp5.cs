@@ -9,6 +9,7 @@ namespace Lab5_CH
     class Supp5
     {
         Dictionary<string, string> table, newtable;
+        //конструктор, который читает из файла информацию, разделяет её и находит подходящую
         public Supp5()
         {
             table = new Dictionary<string, string>();

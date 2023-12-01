@@ -10,6 +10,7 @@ namespace Lab5_CH
     class Supp4
     {
         HashSet<int> Setter;
+        //конструктор, который читает из файла посимвольно всё содержимое и запоминает числа которые там находятся
         public Supp4()
         {
             using (var stream = File.Open("TextFile.txt", FileMode.Open))
