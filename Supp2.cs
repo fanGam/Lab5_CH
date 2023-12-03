@@ -8,15 +8,27 @@ namespace Lab5_CH
 {
     class Supp2
     {
-        private LinkedList<int> list;
+        public static object Max<T>(LinkedList<T> list)
+        {
+            return list.Max();
+        }
+        public static void AddLast<T>(LinkedList<T> list, T elem)
+        {
+            list.AddLast(elem);
+        }
+        public static object Last<T>(LinkedList<T> list)
+        {
+            return list.Last();
+        }
+        private LinkedList<object> list;
         private Random rnd = new Random();
         //метод, который проходит по списку и находит максимальный и минимальный элемент и удаляет всё что между ними
         public void ClearSmth()
         {
-            LinkedList<int> list1 = new LinkedList<int>();
+            LinkedList<object> list1 = new LinkedList<object>();
             int gotter = 0;
             Console.Write("Found: ");
-            foreach (int item in list)
+            foreach (object item in list)
             {
                 if ((item == list.Max()) || (item == list.Min()))
                 {
@@ -42,7 +54,7 @@ namespace Lab5_CH
             }
             Console.WriteLine();
             Console.WriteLine("Left: ");
-            foreach (int item in list1)
+            foreach (object item in list1)
             {
                 Console.Write($"{item} ");
             }
@@ -52,11 +64,11 @@ namespace Lab5_CH
         //конструктор, который создаёт 1й список и заполняет его рандомом
         public Supp2()
         {
-            list = new LinkedList<int>();
+            list = new LinkedList<object>();
             Console.Write("Linked list: ");
             for (int i = 0; i < 30; i++)
             {
-                list.AddLast(rnd.Next(0, 100));
+                list.AddLast((char)rnd.Next(31, 126));
                 Console.Write($"{list.Last()} ");
             }
             Console.WriteLine();
